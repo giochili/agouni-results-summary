@@ -159,7 +159,15 @@ body {
   text-align: right;
   color: #fff;
 }
-.Continue-btn:hover {
+/* .Continue-btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #75f, #6943ff, #2f2ce9);
+} */
+.summary-container:hover {
+  cursor: pointer;
+}
+
+.summary-container:hover .Continue-btn {
   cursor: pointer;
   background-image: linear-gradient(to bottom, #75f, #6943ff, #2f2ce9);
 }
@@ -183,8 +191,7 @@ body {
   .summary-container:hover .result-container {
     top: 0;
     left: 0;
-    transition: 0.5s ease-in;
-    cursor: pointer;
+    /* transition: 0.5s ease-in-out; */
   }
 
   .summary-container:hover {
@@ -200,6 +207,7 @@ body {
     width: 368px;
     height: 100%;
     border-radius: 32px;
+    transition: 0.5s ease-in-out;
   }
   .Continue-btn {
     margin-top: 24px;
