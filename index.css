@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Hanken Grotesk", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ecf2ff;
+}
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px 57px 40px 58px;
+  box-shadow: 0 30px 60px 0 rgba(61, 108, 236, 0.15);
+  background-image: linear-gradient(to bottom, #75f, #6943ff, #2f2ce9);
+  width: 375px;
+  height: 356px;
+  border-radius: 0 0 32px 32px;
+}
+.result-alert {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #cac9ff;
+  margin-bottom: 24px;
+}
+.point-container {
+  padding: 25px 39px 22px 38px;
+  background-image: linear-gradient(
+    to bottom,
+    #4d21c9,
+    rgba(63, 33, 201, 0.64),
+    rgba(37, 33, 201, 0.25),
+    rgba(37, 33, 201, 0)
+  );
+  border-radius: 100%;
+  margin-bottom: 24px;
+}
+.actual-points {
+  font-size: 56px;
+  font-weight: 800;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+}
+.out-of {
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #cac9ff;
+}
+.result-evaluation {
+  font-size: 24px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.more-info {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #cac9ff;
+}
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.judges-desicion {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 24px 30px 30px 30px;
+}
+.summaraiser {
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #303b59;
+  margin-bottom: 24px;
+}
+.reaction {
+  display: flex;
+  width: 100%;
+  padding: 17px 16px 17px 20px;
+  justify-content: space-between;
+  border-radius: 12px;
+  background-color: #fff7f7;
+  margin-bottom: 16px;
+}
+.reaction-point {
+  margin-right: 8px;
+  opacity: 1 !important;
+  color: #303b59;
+  font-size: 16px;
+}
+.reaction-overall {
+  color: rgba(48, 59, 89, 0.5); /* Set color with transparency */
+  font-size: 16px;
+  font-weight: bold;
+}
+.reaction-overall .reaction-point {
+  opacity: 1 !important; /* Ensure it has full opacity */
+}
+.react-header {
+  font-size: 16px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #f55;
+  margin-right: 110px;
+}
+.Continue-btn {
+  width: 100%;
+  border: none;
+  padding: 17px 120px 16px;
+  border-radius: 128px;
+  background-color: #303b59;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: right;
+  color: #fff;
+}
+.Continue-btn:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to bottom, #75f, #6943ff, #2f2ce9);
+}
+@media only screen and (min-width: 1000px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+  .reaction {
+    margin-bottom: 17px;
+    width: 288px;
+  }
+  .summary-container {
+    flex-direction: row;
+    position: relative;
+    width: 736px;
+    height: 512px;
+    padding: 37px 40px 47px 375px;
+    border-radius: 32px;
+  }
+  .summary-container:hover .result-container {
+    top: 0;
+    left: 0;
+    transition: 0.5s ease-in;
+    cursor: pointer;
+  }
+
+  .summary-container:hover {
+    cursor: pointer;
+  }
+  .react-header {
+    margin-right: 80px;
+  }
+  .result-container {
+    position: absolute;
+    left: -23px;
+    top: -24px;
+    width: 368px;
+    height: 100%;
+    border-radius: 32px;
+  }
+  .Continue-btn {
+    margin-top: 24px;
+    align-content: center;
+    padding: 17px 107px 16px 106px;
+  }
+  .result-container {
+    padding: 38px 54px 46px;
+  }
+  .result-alert {
+    margin-bottom: 35px;
+  }
+  .point-container {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+  .actual-points {
+    font-size: 72px;
+    margin-bottom: 4px;
+  }
+  .out-of {
+    font-size: 18px;
+  }
+  .result-evaluation {
+    font-size: 32px;
+    margin-bottom: 14px;
+  }
+  .more-info {
+    font-size: 18px;
+  }
+}
